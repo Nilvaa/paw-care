@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 May, 2025, 8:59:27 PM
+    Author     : HP
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #F18F01;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+    color: #F18F01;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Center the form container horizontally and add some vertical spacing */
+.reg-form {
+  max-width: 500px;
+  background: #ffffff;
+  margin: 60px auto;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+    font-family: "Chelsea Market", system-ui;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-gr,
+.pass-gr {
+  display: flex;
+  align-items: center; 
+}
+
+/* Make input containers flex:1 for equal width */
+.inputs-con,
+.inputs-pa {
+  flex: 1;
+}
+
+/* Inputs and textarea full width inside their containers */
+.inputs,
+textarea {
+  width: 100%;
+  /*padding: 12px 15px;*/
+  /*margin-top: 8px;*/
+  border: 2px solid #ff8800;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+/* Label alignment and spacing */
+
+
+/* Address field with margin */
+.addrs {
+  margin-bottom: 10px;
+}
+
+/* Full-width group */
+/*.inputs-gr {
+  margin-bottom: 10px;
+}*/
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-gr,
+  .pass-gr {
+    flex-direction: column;
+  }
+}
+
+
